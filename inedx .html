@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>الأمين والنجار للمحاماة والاستشارات القانونية والتحكيم</title>
+<meta name="theme-color" content="#0b0b0b" />
+<style>
+  :root{
+    --bg:#060606;
+    --gold:#caa33a;
+    --muted:#e9e6df;
+    --card: rgba(255,255,255,0.03);
+    --shadow: 0 12px 28px rgba(0,0,0,0.6);
+    --maxw:1100px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;font-family:Tahoma, Arial, 'Noto Kufi Arabic', sans-serif;background:var(--bg);color:var(--muted);-webkit-font-smoothing:antialiased;direction:rtl}
+  /* animated subtle background */
+  .bg{
+    position:fixed;inset:0;z-index:-10;background:
+      radial-gradient(900px 500px at 10% 20%, rgba(202,163,58,0.06), transparent 10%),
+      radial-gradient(700px 400px at 90% 80%, rgba(202,163,58,0.03), transparent 15%),
+      linear-gradient(180deg,#020202 0%, #0b0b0b 60%, #121212 100%);
+    overflow:hidden;
+  }
+  .bg::after{
+    content:"";position:absolute;inset:-20%;filter:blur(26px);
+    background:linear-gradient(120deg, rgba(202,163,58,0.02), transparent 40%);
+    animation: drift 18s ease-in-out infinite;
+  }
+  @keyframes drift {0%{transform:translateY(0)}50%{transform:translateY(-22px)}100%{transform:translateY(0)}}
+
+  /* header */
+  .topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(6px);background:linear-gradient(90deg, rgba(202,163,58,0.05), rgba(0,0,0,0.6));padding:12px 16px;text-align:center;box-shadow:var(--shadow)}
+  .brand{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
+  .logo{width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,#111,#000);display:flex;align-items:center;justify-content:center;border:2px solid rgba(202,163,58,0.16);transform-style:preserve-3d;transition:transform .8s}
+  .logo img{width:54px;height:54px;object-fit:contain}
+  .logo:hover{transform:rotateY(360deg) scale(1.02)}
+  .title{color:var(--gold);font-weight:800;font-size:16px;line-height:1}
+  .subtitle{font-size:12px;opacity:0.95;color:var(--muted);margin-top:4px}
+
+  /* layout */
+  main{max-width:var(--maxw);margin:18px auto;padding:0 16px}
+  .card{background:var(--card);border-radius:12px;padding:18px;margin-bottom:18px;border:1px solid rgba(255,255,255,0.02);box-shadow:var(--shadow);overflow:hidden}
+  h1,h2{margin:0 0 10px 0}
+  h2{color:var(--gold);font-size:18px}
+  p,li{color:#eee;font-size:15px;line-height:1.7}
+  ul{padding-right:18px}
+  .split{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+  @media (max-width:920px){.split{grid-template-columns:1fr}}
+  .map-wrap{border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+  iframe{width:100%;height:56vh;border:0;display:block}
+
+  /* whatsapp button */
+  .whatsapp{position:fixed;bottom:18px;right:18px;background:linear-gradient(180deg,#22c55e,#1aa654);color:#fff;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,0.5);z-index:60;display:flex;align-items:center;gap:10px;font-size:15px}
+  .whatsapp svg{width:20px;height:20px;flex-shrink:0}
+
+  footer{padding:22px 12px;text-align:center;color:#bdbdbd;font-size:13px}
+  .reveal{opacity:0;transform:translateY(18px);transition:all .7s cubic-bezier(.2,.9,.3,1)}
+  .reveal.visible{opacity:1;transform:none}
+</style>
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <div class="brand" role="banner">
+      <div class="logo" id="logo">
+        <img src="logo.png" alt="شعار مكتب الأمين والنجار" onerror="this.style.display='none'">
+      </div>
+      <div>
+        <div class="title">الأمين والنجار للمحاماة والاستشارات القانونية والتحكيم</div>
+        <div class="subtitle">تأسس عام 2003 — الأستاذ الدكتور/ أحمد عبد الحميد أمين و/ إسلام عبدالله النجار</div>
+      </div>
+    </div>
+  </div>
+
+  <main role="main">
+    <section class="card reveal" id="about">
+      <h2>نبذة عن المكتب</h2>
+      <p>
+        أسسه الأستاذ الدكتور / أحمد عبد الحميد أمين الأستاذ بكلية الحقوق جامعة الزقازيق والمستشار القانوني / إسلام عبدالله النجار المحامي أمام محكمة النقض والإدارية العليا عام 2003 م.
+      </p>
+      <p>
+        المكتب يضم مجموعة كبيرة من المحامين المتخصصين في الدعاوى المدنية والجنائية والإدارية والأحوال الشخصية وتأسيس الشركات التجارية والضرائب.
+        في مكتب الأمين والنجار نقدم العديد من الخدمات القانونية والاستشارات التي نأمل من خلالها مساعدتكم في حل كافة القضايا والعقبات القانونية التي تواجهكم.
+      </p>
+      <ul>
+        <li>ندرس القضايا بعناية.</li>
+        <li>التعاون الصادق بين المحامي والعميل هو أولى خطوات النجاح وجلب الحقوق.</li>
+        <li>فريق العمل لدينا ملم بكافة الإجراءات القانونية اللازمة لكل قضية مما يقلل نسبة الخطأ في الإجراءات.</li>
+      </ul>
+    </section>
+
+    <section class="card reveal" id="services">
+      <h2>الخدمات التي نتميز بها</h2>
+      <ol>
+        <li>تأسيس شراكات على أسس قانونية موضوعية.</li>
+        <li>وضع حلول بديلة ودية للنزاعات بين الشركات أو الأفراد (الوساطة أو التحكيم).</li>
+        <li>خدمة الاستقصاء والتحري وتقديم دراسة كاملة شاملة عن الوضع القانوني لأي شركات أو أشخاص بناء على طلب العملاء قبل تعاقدهم معهم.</li>
+        <li>خدمة التأمين القضائي وهي خدمة نوفرها للشركات والأشخاص مقابل قسط سنوي وعقد، تلتزم بموجبه الشركة بالحضور مع العملاء في أي وقت وأمام كافة الجهات القضائية وأقسام الشرطة وتسديد الغرامات والكفالات عنهم.</li>
+        <li>زواج الأجانب.</li>
+        <li>إدارة أملاك الغير.</li>
+        <li>قضايا المصريين والعرب المغتربين أمام المحاكم العربية والأجنبية.</li>
+      </ol>
+      <p>تغطى خدمات المكتب جمهورية مصر العربية بكافة محافظاتها والدول العربية وذلك بموجب بروتوكولات تعاون مع زملائنا المحامين في هذه الدول.</p>
+    </section>
+
+    <section class="card reveal" id="contact">
+      <h2>تواصل معنا</h2>
+      <p>📞 الهاتف: <strong>01002805632</strong></p>
+      <p>📍 العنوان: الزقازيق، محافظة الشرقية — مصر</p>
+
+      <div class="split" style="margin-top:14px">
+        <div>
+          <p>يمكنك التواصل معنا فوراً عبر زر واتساب الثابت أسفل الصفحة، أو استخدام الخريطة التفاعلية على اليمين للوصول للمكتب.</p>
+          <p><strong>شعارنا دائماً — الثقة والسرية فيما يخص الموكِل</strong></p>
+        </div>
+
+        <div class="map-wrap" aria-hidden="false">
+          <!-- خريطة مدمجة (تحتاج إنترنت) -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110573.09830209547!2d31.4458!3d30.5877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7ff5b8d4a8dcd%3A0x9f3dfc4dca12345!2z2YXYs9is2K8g2KfZhNmF2Kkg2KfZhNi62YrYp9ix2Kkg2YHZg9iv2KfZhQ!5e0!3m2!1sar!2seg!4v1691779000000"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp" href="https://wa.me/201002805632" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.52 3.48A11.9 11.9 0 0012 0C5.373 0 .03 5.343.03 12S5.373 24 12 24c2.02 0 3.98-.5 5.72-1.44L24 24l-1.46-6.28A11.9 11.9 0 0024 12c0-1.83-.34-3.58-1.04-5.22z" fill="#25D366"/></svg>
+    تواصل عبر واتساب
+  </a>
+
+  <footer>© الأمين والنجار للمحاماة — جميع الحقوق محفوظة</footer>
+
+<script>
+  // ظهور العناصر عند التمرير
+  function revealOnScroll(){
+    document.querySelectorAll('.reveal').forEach(el=>{
+      const rect = el.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 80) el.classList.add('visible');
+    });
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+
+  // خلفية بارالاكس خفيفة
+  window.addEventListener('scroll', function(){
+    const y = window.scrollY;
+    const bg = document.querySelector('.bg');
+    if(bg) bg.style.transform = `translateY(${y * -0.02}px)`;
+  });
+
+  // تفاعل شعار خفيف للموبايل
+  const logo = document.getElementById('logo');
+  if(logo){
+    logo.addEventListener('touchstart', ()=> logo.style.transform = 'scale(1.02) rotateY(20deg)');
+    logo.addEventListener('touchend', ()=> logo.style.transform = '');
+  }
+</script>
+</body>
+</html>
